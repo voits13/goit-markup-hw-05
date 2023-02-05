@@ -68,6 +68,9 @@ p {
   color: currentColor;
   font-family: inherit;
   text-decoration: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -118,6 +121,9 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Header section */
@@ -181,6 +187,10 @@ p {
   padding-bottom: 24px;
   color: var(--dark-txt-cl);
   font-weight: 500;
+}
+
+.menu-link.current::after {
+  content: '';
 }
 
 .menu-link:hover,
