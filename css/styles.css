@@ -55,7 +55,7 @@ p {
 
 .container {
   /* outline: 2px solid red;
-    outline-offset: -2px; */
+  outline-offset: -2px; */
 
   width: 1158px;
   margin-right: auto;
@@ -182,6 +182,7 @@ p {
 }
 
 .menu-list .menu-link {
+  position: relative;
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -189,8 +190,15 @@ p {
   font-weight: 500;
 }
 
-.menu-link.current::after {
+.menu-list .menu-link.current::after {
   content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--pressed-bg-cl);
+  border-radius: 2px;
+  position: absolute;
+  bottom: -1px;
 }
 
 .menu-link:hover,
