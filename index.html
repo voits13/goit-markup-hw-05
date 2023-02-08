@@ -52,7 +52,7 @@
             <div class="container">
                 <h1 class="hero-title">Effective Solutions
                     for Your Business</h1>
-                <button class="hero-btn btn" type="button">Order Service</button>
+                <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!--Feature section-->
@@ -382,9 +382,9 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-close-btn" type="button">
+            <button class="modal-close-btn btn" type="button" data-modal-close>
                 <svg class="modal-close-btn-icon" width="8" height="8">
                     <use href="./images/symbol-defs.svg#icon-close-modal"></use>
 
@@ -394,6 +394,7 @@
 
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
