@@ -68,9 +68,6 @@ p {
   color: currentColor;
   font-family: inherit;
   text-decoration: none;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -121,9 +118,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04;
   cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Header section */
@@ -201,6 +195,10 @@ p {
   background-color: var(--pressed-bg-cl);
 }
 
+.menu-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--pressed-txt-cl);
@@ -217,6 +215,7 @@ p {
 
 .contacts-link {
   color: var(--text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -264,6 +263,7 @@ p {
   background-color: var(--primery-bg-cl);
 
   color: var(--white-txt-cl);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -368,6 +368,7 @@ p {
   height: 40px;
   border-radius: 50%;
   background-color: var(--primery-bg-cl);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -402,6 +403,7 @@ p {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brend {
@@ -469,6 +471,7 @@ p {
   border: none;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -502,6 +505,9 @@ p {
   background-color: var(--light-bg-cl);
   color: var(--primery-txt-cl);
   text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-filter:hover,
